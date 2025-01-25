@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Camiseta deportiva 121 act",
+    "description": "Camiseta de entrenamiento transpirable 9",
+    "code": "CAM006",
+    "price": 128,
+    "status": true,
+    "stock": 28,
+    "category": "Ropa Deportiva",
+    "thumbnails": [
+      "http://example.com/images/camiseta9.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "pantalon corto",
+    "description": "pantalon transpirable 9",
+    "code": "CAM004",
+    "price": 60,
+    "status": true,
+    "stock": 28,
+    "category": "Ropa Deportiva",
+    "thumbnails": [
+      "http://example.com/images/pantalon9.jpg"
+    ]
+  }
+]
