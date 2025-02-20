@@ -17,17 +17,23 @@ router.post('/', async (req, res) => {
 
 
 // Ruta para agregar un producto a un carrito
-router.post('/:cartId/products', async (req, res) => {
+router.post('/:cartId/products/:productId', async (req, res) => {
   try {
-    const { cartId } = req.params;
-    const { productId } = req.body;
+    const { cartId, productId } = req.params;
+    const { quantity } = req.body; // Si deseas agregar un campo de cantidad
 
-    const updatedCart = await cartManager.addProductToCart(Number(cartId), productId);
-    res.status(200).json({ message: 'Producto agregado al carrito', cart: updatedCart });
+    // Lógica para agregar el producto al carrito
+    const updatedCart = await cartManager.addProductToCart(Number(cartId), productId, quantity);
+
+    res.status(200).json({
+      message: 'Producto agregado al carrito',
+      cart: updatedCart
+    });
   } catch (error) {
     res.status(500).json({ error: error.message || 'Error al agregar producto al carrito' });
   }
 });
+
 
 // Ruta para obtener todos los carritos
 router.get('/', async (req, res) => {

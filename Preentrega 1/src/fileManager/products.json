@@ -24,5 +24,31 @@
     "thumbnails": [
       "http://example.com/images/pantalon9.jpg"
     ]
+  },
+  {
+    "id": 3,
+    "title": "Camiseta deportiva 3",
+    "description": "Camiseta de entrenamiento transpirable 5",
+    "code": "CAM006",
+    "price": 129,
+    "status": true,
+    "stock": 28,
+    "category": "Ropa Deportiva",
+    "thumbnails": [
+      "http://example.com/images/camiseta3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Camiseta deportiva 4",
+    "description": "Camiseta de entrenamiento transpirable 4",
+    "code": "CAM004",
+    "price": 129,
+    "status": true,
+    "stock": 28,
+    "category": "Ropa Deportiva",
+    "thumbnails": [
+      "http://example.com/images/camiseta4.jpg"
+    ]
   }
 ]

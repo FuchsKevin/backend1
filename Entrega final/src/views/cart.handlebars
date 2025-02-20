@@ -1,0 +1,13 @@
+<h1>Carrito de Compras</h1>
+
+{{#if productos.length}}
+  {{#each productos}}
+    <div>
+      <p>{{this.nombre}} - ${{this.precio}} (Cantidad: {{this.cantidad}})</p>
+    </div>
+  {{/each}}
+{{else}}
+  <p>El carrito está vacío.</p>
+{{/if}}
+
+<a href="/">Volver a productos</a>

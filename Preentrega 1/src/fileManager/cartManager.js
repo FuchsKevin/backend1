@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // Ruta del archivo JSON del carrito
 const CARTS_FILE = path.resolve(__dirname, '..', 'fileManager', 'carts.json');
-console.log('Ruta de archivo de carritos:', CARTS_FILE);
+
 
 
 
